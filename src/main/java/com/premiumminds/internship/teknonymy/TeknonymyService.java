@@ -24,6 +24,8 @@ class TeknonymyService implements ITeknonymyService {
       for (int i = 0; i < childDepth - 2; i++) {
         TeknonymyName += "great-";
       }
+    }
+    if (childDepth > 1) {
       TeknonymyName += "grand";
     }
     if (person.sex() == 'M') {
